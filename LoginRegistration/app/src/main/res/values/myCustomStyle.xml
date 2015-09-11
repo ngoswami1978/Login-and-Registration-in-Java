@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+<!-- Round shape style for TextView starting from Right side 
+
+for Example...
+	<TextView
+        android:id="@+id/tvforget"
+        android:text="Forgot password?"
+        style="@style/myTextViewStyle_Shape_rounded_rect.WHITE" />
+    <TextView
+        android:id="@+id/tvregister"
+        android:text="Register me"
+        style="@style/myTextViewStyle_Shape_rounded_rect.WHITE" />
+-->
+
+	<style name="myTextViewStyle_Shape_rounded_rect">    
+	  	<item name="android:layout_width">wrap_content</item>  
+	    <item name="android:layout_height">wrap_content</item>  
+	    <item name="android:padding">5dp</item>  
+	    <item name="android:textAlignment">textEnd</item>  
+	    <item name="android:textStyle">italic</item>  
+	    <item name="android:layout_gravity">center</item>  
+	    <item name="android:layout_marginBottom">10dp</item>  
+	    <item name="android:background">@drawable/shape_rounded_white_rect</item>  
+	    <item name="android:textColor">@drawable/selector_color</item>            
+	</style>
+
+	<style name="myTextViewStyle_Shape_rounded_rect.WHITE">
+		<item name="android:background">@drawable/shape_rounded_white_rect</item>  
+	</style>
+	<style name="myTextViewStyle_Shape_rounded_rect.BLUE">    
+		<item name="android:background">@drawable/shape_rounded_blue_rect</item>  
+	</style>
+	<style name="myTextViewStyle_Shape_rounded_rect.CRIMSON">    
+		<item name="android:background">@drawable/shape_rounded_crimson_rect</item>  
+	</style>
+	<style name="myTextViewStyle_Shape_rounded_rect.INDIANRED">    
+		<item name="android:background">@drawable/shape_rounded_indianred_rect</item>  
+	</style>
+<!-- end Round shape style for Text View starting from Right side-->
+
+
+<!-- Round shape style for TextView starting from both side
+for Example...
+<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        style="@style/myTextViewStyle_Shape_rounded_bothside_rect.CRIMSON"
+        android:gravity="center">
+-->
+
+	<style name="myTextViewStyle_Shape_rounded_bothside_rect">    
+	  	<item name="android:layout_width">wrap_content</item>  
+	    <item name="android:layout_height">wrap_content</item>  
+	    <item name="android:padding">5dp</item>  
+	    <item name="android:textAlignment">textEnd</item>  
+	    <item name="android:textStyle">italic</item>  
+	    <item name="android:layout_gravity">center</item>  
+	    <item name="android:layout_marginBottom">10dp</item>  
+	    <item name="android:background">@drawable/shape_rounded_bothside_white_rect</item>  
+	    <item name="android:textColor">@drawable/selector_color</item>            
+	</style>
+
+	<style name="myTextViewStyle_Shape_rounded_bothside_rect.WHITE">    
+		<item name="android:background">@drawable/shape_rounded_white_rect</item>  
+	</style>
+	<style name="myTextViewStyle_Shape_rounded_bothside_rect.BLUE">    
+		<item name="android:background">@drawable/shape_rounded_bothside_blue_rect</item>  
+	</style>
+	<style name="myTextViewStyle_Shape_rounded_bothside_rect.CRIMSON">    
+		<item name="android:background">@drawable/shape_rounded_bothside_crimson_rect</item>  
+	</style>
+	<style name="myTextViewStyle_Shape_rounded_bothside_rect.INDIANRED">    
+		<item name="android:background">@drawable/shape_rounded_bothside_indianred_rect</item>  
+	</style>
+<!-- Round shape style for Text View starting from both side-->
+
+
+
+
+<!-- Custom Theme 
+for Example...
+
+Applied on Mainifest file pls see the following code
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+android:versionCode="1" 
+android:versionName="1.0" 
+package="com.companyname.myfirstapp">
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19" />
+	<application 
+		android:theme="@style/MyBLACKTheme"
+		android:label="Galaxy Apartment" 
+		android:icon="@drawable/icon">
+		<activity 
+			android:name="com.companyname.myfirstapp.LoginScreen"
+			android:theme="@style/MyBLACKThemewithTitlebar" 
+			android:screenOrientation="sensor"
+			android:label="LoginScreen">
+		</activity>
+		<activity 
+			android:name="com.companyname.myfirstapp.WelcomeActivity"
+			android:theme="@style/MyBLACKThemewithTitlebar" 
+			android:screenOrientation="sensor"
+			android:label="Welcome">
+		</activity>
+	</application>
+</manifest>
+-->
+	<style name="MyDefaultwhitesmokeTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <!--Change Entirly EditText background use below line of code-->
+        <item name="android:editTextBackground">@drawable/rect_text_edit_whitesmoke</item>
+        <!--end Change Entirly EditText background use below line of code-->
+        <item name="android:windowBackground">@color/my_WhiteSmoke</item>
+    	<item name="android:colorBackground">@color/my_WhiteSmoke</item>
+	</style>
+
+	<style name="MyGreenTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:editTextBackground">@drawable/rect_text_edit_green</item>
+        <item name="android:windowBackground">@color/my_LightGreen</item>
+    	<item name="android:colorBackground">@color/my_LightGreen</item>
+	</style>
+
+	<style name="MyCRIMSONTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:editTextBackground">@drawable/rect_text_edit_crimson</item>
+        <item name="android:windowBackground">@color/my_Crimson</item>
+    	<item name="android:colorBackground">@color/my_Crimson</item>
+	</style>
+
+	<style name="MyINDIANREDTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:editTextBackground">@drawable/rect_text_edit_indianred</item>
+        <item name="android:windowBackground">@color/my_Indianred</item>
+    	<item name="android:colorBackground">@color/my_Indianred</item>
+	</style>
+
+	<style name="MyIVORYBLACKTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:editTextBackground">@drawable/rect_text_edit_ivoryblack</item>
+        <item name="android:textColor">@color/my_White</item>
+        <item name="android:editTextColor">@color/my_White</item>
+        <item name="android:windowBackground">@color/my_ivoryblack</item>
+    	<item name="android:colorBackground">@color/my_ivoryblack</item>
+	</style>
+	<style name="MyBLACKTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:editTextBackground">@drawable/rect_text_edit_black</item>
+        <item name="android:textColor">@color/my_White</item>
+        <item name="android:editTextColor">@color/my_White</item>
+        <item name="android:windowBackground">@color/my_Black</item>
+    	<item name="android:colorBackground">@color/my_Black</item>
+	</style>
+
+
+	<!--Setting Custom Theme with Title Bar-->
+	<style name="MyDefaultwhitesmokeThemewithTitlebar" parent="android:Theme.Holo.Light">
+		<item name="android:windowNoTitle">false</item>
+		<item name="android:actionBarStyle">@style/MyActionBarTheme.ActionBarStyle</item>
+    	<!--Change Entirly EditText background use below line of code-->
+        <item name="android:editTextBackground">@drawable/rect_text_edit_whitesmoke</item>
+        <!--end Change Entirly EditText background use below line of code-->
+        <item name="android:windowBackground">@color/my_WhiteSmoke</item>
+    	<item name="android:colorBackground">@color/my_WhiteSmoke</item>
+	</style>
+	<style name="MyGreenThemewithTitlebar" parent="android:Theme.Holo.Light">
+		<item name="android:windowNoTitle">false</item>
+        <item name="android:actionBarStyle">@style/MyActionBarTheme.ActionBarStyle</item>
+        <item name="android:editTextBackground">@drawable/rect_text_edit_green</item>
+        <item name="android:windowBackground">@color/my_LightGreen</item>
+    	<item name="android:colorBackground">@color/my_LightGreen</item>
+	</style>
+	<style name="MyCRIMSONThemewithTitlebar" parent="android:Theme.Holo.Light">
+		<item name="android:windowNoTitle">false</item>
+        <item name="android:actionBarStyle">@style/MyActionBarTheme.ActionBarStyle</item>
+        <item name="android:editTextBackground">@drawable/rect_text_edit_crimson</item>
+        <item name="android:windowBackground">@color/my_Crimson</item>
+    	<item name="android:colorBackground">@color/my_Crimson</item>
+	</style>
+	<style name="MyINDIANREDThemewithTitlebar" parent="android:Theme.Holo.Light">
+		<item name="android:windowNoTitle">false</item>
+        <item name="android:actionBarStyle">@style/MyActionBarTheme.ActionBarStyle</item>
+        <item name="android:editTextBackground">@drawable/rect_text_edit_indianred</item>
+        <item name="android:windowBackground">@color/my_Indianred</item>
+    	<item name="android:colorBackground">@color/my_Indianred</item>        
+	</style>
+	<style name="MyIVORYBLACKThemewithTitlebar" parent="android:Theme.Holo.Light">
+		<item name="android:windowNoTitle">false</item>
+        <item name="android:actionBarStyle">@style/MyActionBarTheme.ActionBarStyle</item>
+        <item name="android:editTextBackground">@drawable/rect_text_edit_ivoryblack</item>
+        <item name="android:textColor">@color/my_White</item>
+        <item name="android:editTextColor">@color/my_White</item>
+        <item name="android:windowBackground">@color/my_ivoryblack</item>
+    	<item name="android:colorBackground">@color/my_ivoryblack</item>
+	</style>
+	<style name="MyBLACKThemewithTitlebar" parent="android:Theme.Holo.Light">
+		<item name="android:windowNoTitle">false</item>
+        <item name="android:actionBarStyle">@style/MyActionBarTheme.ActionBarStyle</item>
+        <item name="android:editTextBackground">@drawable/rect_text_edit_black</item>
+        <item name="android:textColor">@color/my_White</item>
+        <item name="android:editTextColor">@color/my_White</item>
+        <item name="android:windowBackground">@color/my_Black</item>
+    	<item name="android:colorBackground">@color/my_Black</item>
+	</style>
+
+	<!-- My Action Bar Style-->
+	<style name="MyActionBarTheme"  parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBarTheme.ActionBarStyle</item>
+    </style>
+	<style name="MyActionBarTheme.ActionBarStyle" parent="android:style/Widget.Holo.Light.ActionBar">				
+		<item name="android:titleTextStyle">@style/MyActionBarTheme.ActionBar.TitleTextStyle</item>
+		<item name="android:background">@color/actionBarBackgroundColor</item>
+	</style>
+	<style name="MyActionBarTheme.ActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">@color/actionBarTextColor</item>
+	</style>
+	<!--end My Action Bar Style-->
+
+	<!-- My Custom Theme -->
+</resources>

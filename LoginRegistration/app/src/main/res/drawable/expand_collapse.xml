@@ -1,0 +1,4 @@
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/apartment1" />
+    <item android:drawable="@drawable/apartment2" />
+</transition>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<color name="my_WhiteSmoke">#F5F5F5</color> <!-- white smoke (gray 96)-->
+    <color name="my_blue">#3498DB</color>
+    <color name="my_green">#77D065</color>
+    <color name="my_purple">#B455B6</color>
+    <color name="my_gray">#738182</color>
+    <color name="my_LightGreen">#11aa22</color>
+    <color name="my_Crimson">#DC143C</color>
+    <color name="my_Indianred">#B0171F</color>
+    <color name="my_ivoryblack">#292421</color>
+    <color name="my_White">#FFFFFF</color>
+    <color name="my_Black">#000000</color>
+    <color name="actionBarBackgroundColor">#F5F5F5</color>
+	<color name="actionBarTextColor">#FFFFFF</color>
+</resources>
